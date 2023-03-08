@@ -1,3 +1,4 @@
 rootProject.name = 'monolito-ddd'
 include 'shared'
+include 'productadm'
 
