@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.vicente.productadm.usecase.addproduct.AddProductUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-08T16:10:55" hostname="NLAMBERT" time="0.491">
+  <properties/>
+  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.productadm.usecase.addproduct.AddProductUseCaseTest" time="0.491"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

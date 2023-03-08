@@ -5,6 +5,7 @@ import br.com.vicente.shared.domain.entity.BaseEntity;
 import br.com.vicente.shared.domain.valueobject.IdValueObject;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 public class ProductEntity extends BaseEntity implements AggregateRoot {
 
@@ -13,19 +14,19 @@ public class ProductEntity extends BaseEntity implements AggregateRoot {
     private BigDecimal purchasePrice;
     private Integer stock;
 
-    public ProductEntity(String name, String description, BigDecimal purchasePrice, Integer stock) {
-        super();
-        this.name = name;
-        this.description = description;
-        this.purchasePrice = purchasePrice;
-        this.stock = stock;
-    }
-    public ProductEntity(IdValueObject id, String name, String description, BigDecimal purchasePrice, Integer stock) {
+
+    private ProductEntity(IdValueObject id, String name, String description, BigDecimal purchasePrice, Integer stock) {
         super(id);
         this.name = name;
         this.description = description;
         this.purchasePrice = purchasePrice;
         this.stock = stock;
+    }
+
+    public static ProductEntity newProductEntity(String name, String description, BigDecimal purchasePrice, Integer stock){
+        IdValueObject id = new IdValueObject(UUID.randomUUID().toString());
+        return new ProductEntity(id, name,description,purchasePrice,stock);
+
     }
 
     public String getName() {
