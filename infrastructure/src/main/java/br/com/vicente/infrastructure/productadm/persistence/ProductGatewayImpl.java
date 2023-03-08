@@ -25,6 +25,7 @@ public class ProductGatewayImpl implements ProductGateway {
 
     @Override
     public Optional<ProductEntity> findById(String id) {
-        return Optional.empty();
+
+        return productRepository.findById(id).map(ProductJPAEntity::toAggregate);
     }
 }

@@ -2,6 +2,7 @@ package br.com.vicente.infrastructure.productadm.persistence;
 
 
 import br.com.vicente.productadm.domain.ProductEntity;
+import br.com.vicente.shared.domain.valueobject.IdValueObject;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -55,5 +56,48 @@ public class ProductJPAEntity {
                 aProductEntity.getCreatedAt(),
                 aProductEntity.getUpdatedAt()
         );
+    }
+
+    public ProductEntity toAggregate() {
+        ProductEntity e = ProductEntity.with(
+                IdValueObject.from(getId()),
+                getName(),
+                getDescription(),
+                getPurchasePrice(),
+                getStock(),
+                getCreatedAt(),
+                getUpdatedAt()
+
+
+        );
+        return e;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public BigDecimal getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
     }
 }

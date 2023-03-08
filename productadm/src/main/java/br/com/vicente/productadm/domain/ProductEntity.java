@@ -5,6 +5,7 @@ import br.com.vicente.shared.domain.entity.BaseEntity;
 import br.com.vicente.shared.domain.valueobject.IdValueObject;
 
 import java.math.BigDecimal;
+import java.time.Instant;
 import java.util.UUID;
 
 public class ProductEntity extends BaseEntity implements AggregateRoot {
@@ -21,10 +22,37 @@ public class ProductEntity extends BaseEntity implements AggregateRoot {
         this.description = description;
         this.purchasePrice = purchasePrice;
         this.stock = stock;
+
+    }
+    private ProductEntity(IdValueObject id, String name, String description, BigDecimal purchasePrice, Integer stock,Instant createdAt, Instant updatedAt) {
+        super(id,createdAt,updatedAt);
+        this.name = name;
+        this.description = description;
+        this.purchasePrice = purchasePrice;
+        this.stock = stock;
+    }
+
+    public static ProductEntity with(
+            final IdValueObject anId,
+            final String name,
+            final String description,
+            final BigDecimal price,
+            final Integer stock,
+            final Instant createdAt,
+            final Instant updatedAt) {
+        return new ProductEntity(
+                anId,
+                name,
+                description,
+                price,
+                stock,
+                createdAt,
+                updatedAt
+                );
     }
 
     public static ProductEntity newProductEntity(String name, String description, BigDecimal purchasePrice, Integer stock){
-        IdValueObject id = new IdValueObject(UUID.randomUUID().toString());
+        IdValueObject id = IdValueObject.unique();
         return new ProductEntity(id, name,description,purchasePrice,stock);
 
     }

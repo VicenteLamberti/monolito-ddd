@@ -10,10 +10,10 @@ public class BaseEntity {
     private Instant createdAt;
     private Instant updatedAt;
 
-    public BaseEntity() {
-        Instant now = Instant.now();
-        this.createdAt = now;
-        this.updatedAt = now;
+    public BaseEntity(IdValueObject id, Instant createdAt, Instant updatedAt) {
+        this.id = id;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
     public BaseEntity(IdValueObject id) {
         this.id = id;

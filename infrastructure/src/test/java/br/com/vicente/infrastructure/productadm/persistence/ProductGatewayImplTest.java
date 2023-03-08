@@ -40,4 +40,30 @@ public class ProductGatewayImplTest {
         productGatewayImpl.add(product);
         Assertions.assertEquals(1,productRepository.count());
     }
+
+    @Test
+    public void givenAPersistedProducts_whenCallsFindById_shouldReturnProduct(){
+        String expectedName = "Produto 1";
+        String expectedDescription = "Descrição";
+        BigDecimal expectedPrice = BigDecimal.TEN;
+        Integer expectedStock  = 5;
+        ProductEntity product = ProductEntity.newProductEntity(expectedName,expectedDescription,expectedPrice,expectedStock);
+
+        System.out.println(product.getCreatedAt());
+        String expectedId = product.getId().getId();
+        Assertions.assertEquals(0, productRepository.count());
+        productRepository.saveAndFlush(ProductJPAEntity.from(product));
+
+        ProductEntity productResult = productGatewayImpl.findById(expectedId).get();
+        System.out.println(productResult.getCreatedAt());
+
+        Assertions.assertEquals(expectedName,productResult.getName());
+        Assertions.assertEquals(expectedDescription,productResult.getDescription());
+        Assertions.assertEquals(expectedPrice,productResult.getPurchasePrice());
+        Assertions.assertEquals(expectedStock,productResult.getStock());
+        Assertions.assertNotNull(productResult.getCreatedAt());
+        Assertions.assertNotNull(productResult.getUpdatedAt());
+        Assertions.assertEquals(expectedId,productResult.getId().getId());
+
+    }
 }
