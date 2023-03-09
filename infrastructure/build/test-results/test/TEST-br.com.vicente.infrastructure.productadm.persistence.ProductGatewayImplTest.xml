@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-08T20:09:26" hostname="NLAMBERT" time="0.521">
+<testsuite name="br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-09T19:43:48" hostname="NLAMBERT" time="0.047">
   <properties/>
-  <testcase name="givenAPersistedProducts_whenCallsFindById_shouldReturnProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest" time="0.521"/>
-  <system-out><![CDATA[17:09:23.503 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductGatewayImplTest]: using SpringBootContextLoader
-17:09:23.511 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:09:23.512 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest]: ProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:09:23.558 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using ContextCustomizers for test class [ProductGatewayImplTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
-17:09:23.613 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure\build\classes\java\main\br\com\vicente\infrastructure\Main.class]
-17:09:23.615 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest
-17:09:23.634 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper - Using TestExecutionListeners for test class [ProductGatewayImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-17:09:23.635 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [ProductGatewayImplTest], class annotated with @DirtiesContext [false] with mode [null]
-17:09:23.645 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest
+  <testcase name="givenAPersistedProducts_whenCallsFindById_shouldReturnProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest" time="0.032"/>
+  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest" time="0.014"/>
+  <system-out><![CDATA[2023-03-09T16:43:48.404-03:00  INFO 5652 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest]: ProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-09T16:43:48.425-03:00  INFO 5652 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,26 +14,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-08T17:09:23.950-03:00  INFO 1560 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Starting ProductGatewayImplTest using Java 17.0.2 with PID 1560 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
-2023-03-08T17:09:23.953-03:00  INFO 1560 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : The following 1 profile is active: "test-integration"
-2023-03-08T17:09:24.295-03:00  INFO 1560 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-08T17:09:24.343-03:00  INFO 1560 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
-2023-03-08T17:09:24.420-03:00  INFO 1560 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2023-03-08T17:09:24.654-03:00  INFO 1560 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a84dbb2b-6bbf-400c-9001-daeeb77c17d8;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-03-08T17:09:24.883-03:00  INFO 1560 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
-2023-03-08T17:09:24.884-03:00  INFO 1560 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
-2023-03-08T17:09:24.884-03:00  INFO 1560 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-03-08T17:09:24.900-03:00  INFO 1560 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:a84dbb2b-6bbf-400c-9001-daeeb77c17d8 (H2 2.1)
-2023-03-08T17:09:24.943-03:00  INFO 1560 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
-2023-03-08T17:09:24.947-03:00  INFO 1560 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
-2023-03-08T17:09:24.965-03:00  INFO 1560 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
-2023-03-08T17:09:24.970-03:00  INFO 1560 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Create Products Table"
-2023-03-08T17:09:24.978-03:00  INFO 1560 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.014s)
-2023-03-08T17:09:25.068-03:00  INFO 1560 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-08T17:09:25.114-03:00  INFO 1560 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-03-08T17:09:25.281-03:00  WARN 1560 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-08T17:09:25.423-03:00  INFO 1560 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-08T17:09:25.676-03:00  INFO 1560 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+2023-03-09T16:43:48.455-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Starting ProductGatewayImplTest using Java 17.0.2 with PID 5652 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
+2023-03-09T16:43:48.455-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : The following 1 profile is active: "test-integration"
+2023-03-09T16:43:48.556-03:00  INFO 5652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09T16:43:48.569-03:00  INFO 5652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2023-03-09T16:43:48.592-03:00  INFO 5652 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-03-09T16:43:48.641-03:00  INFO 5652 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fc4dafdb-82f8-45a9-8e7b-e9c4c36a1314;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-03-09T16:43:48.654-03:00  INFO 5652 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:fc4dafdb-82f8-45a9-8e7b-e9c4c36a1314 (H2 2.1)
+2023-03-09T16:43:48.660-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
+2023-03-09T16:43:48.661-03:00  INFO 5652 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-03-09T16:43:48.669-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2023-03-09T16:43:48.675-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - Create Products Table"
+2023-03-09T16:43:48.678-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.010s)
+2023-03-09T16:43:48.701-03:00  INFO 5652 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09T16:43:48.707-03:00  WARN 5652 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-09T16:43:48.712-03:00  INFO 5652 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-09T16:43:48.724-03:00  INFO 5652 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 
 jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291) ~[jakarta.validation-api-3.0.2.jar:na]
@@ -170,10 +160,10 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2023-03-08T17:09:26.085-03:00  INFO 1560 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-08T17:09:26.092-03:00  INFO 1560 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-08T17:09:26.364-03:00  INFO 1560 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Started ProductGatewayImplTest in 2.686 seconds (process running for 3.709)
-2023-03-08T20:09:26.542118900Z
+2023-03-09T16:43:48.748-03:00  INFO 5652 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09T16:43:48.749-03:00  INFO 5652 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09T16:43:48.803-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Started ProductGatewayImplTest in 0.373 seconds (process running for 7.489)
+2023-03-09T19:43:48.816116700Z
 Hibernate: 
     select
         count(*) 
@@ -199,7 +189,37 @@ Hibernate:
         (created_at, description, name, purchase_price, stock, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?)
-2023-03-08T20:09:26.542118900Z
+2023-03-09T19:43:48.816116700Z
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.name,
+        p1_0.purchase_price,
+        p1_0.stock,
+        p1_0.updated_at 
+    from
+        products p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    insert 
+    into
+        products
+        (created_at, description, name, purchase_price, stock, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        products p1_0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

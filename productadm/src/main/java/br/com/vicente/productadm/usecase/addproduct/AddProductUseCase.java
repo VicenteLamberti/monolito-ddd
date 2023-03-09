@@ -2,11 +2,12 @@ package br.com.vicente.productadm.usecase.addproduct;
 
 import br.com.vicente.productadm.domain.ProductEntity;
 import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.shared.usecase.UseCaseInteface;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class AddProductUseCase {
+public class AddProductUseCase implements UseCaseInteface<AddProductInputDto,AddProductOutputDto> {
 
     private final ProductGateway gateway;
 

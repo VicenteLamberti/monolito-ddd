@@ -9,4 +9,6 @@ public record AddProductInputDto (
         Integer stock
 ){
 
+
+
 }
