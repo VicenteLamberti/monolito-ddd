@@ -26,12 +26,8 @@ public class AddProductUseCaseTest {
         final String expectedDescription = "Novo produto";
         final BigDecimal expectedPrice = BigDecimal.TEN;
         final Integer expectedStock = 5;
-
-
         final AddProductInputDto input = new AddProductInputDto(expectedName,expectedDescription , expectedPrice,expectedStock);
-
         AddProductOutputDto resultOutput = useCase.execute(input);
-
         Mockito.verify(gateway,Mockito.times(1)).add(Mockito.any());
         Assertions.assertNotNull(resultOutput);
         Assertions.assertEquals(expectedName, resultOutput.name());

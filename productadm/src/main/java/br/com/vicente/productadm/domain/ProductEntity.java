@@ -57,6 +57,11 @@ public class ProductEntity extends BaseEntity implements AggregateRoot {
 
     }
 
+    public static ProductEntity newProductEntity(IdValueObject id, String name, String description, BigDecimal purchasePrice, Integer stock){
+        return new ProductEntity(id, name,description,purchasePrice,stock);
+
+    }
+
     public String getName() {
         return name;
     }
