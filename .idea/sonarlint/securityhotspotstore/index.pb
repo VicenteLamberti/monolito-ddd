@@ -1,6 +1,4 @@
 
-C
-shared/build.gradle,3\a\3a551cc065aa0481b49944f0700a7244f8f9c574
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
 d
@@ -37,9 +35,5 @@ hinfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/persisten
 Pinfrastructure/src/test/java/br/com/vicente/infrastructure/CleanUpExtension.java,0\8\0819a6047ade9548229dd1de2aebad5c27eb532a
 ™
 iinfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/persistence/ProductGatewayImpl.java,7\c\7c5c11823d37bc4ef0f2d5a9cd7815300c557729
-x
-Hshared/src/main/java/br/com/vicente/shared/domain/entity/BaseEntity.java,f\4\f4dea5fe6d1a73ee88efb2991c721a9ec4f13849
-|
-Lproductadm/src/main/java/br/com/vicente/productadm/domain/ProductEntity.java,d\3\d32132a413f5030165f07131e19f51ca4fcd911e
 €
 Pshared/src/main/java/br/com/vicente/shared/domain/valueobject/IdValueObject.java,0\f\0f7bca3a58943ea7eeed3db796347ec69333f00e
