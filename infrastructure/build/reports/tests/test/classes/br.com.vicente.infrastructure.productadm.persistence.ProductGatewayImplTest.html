@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.046s</div>
+<div class="counter">0.058s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">givenAPersistedProducts_whenCallsFindById_shouldReturnProduct()</td>
-<td class="success">0.032s</td>
+<td class="success">0.033s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidEntity_whenCallAddProduct_shouldAddProduct()</td>
-<td class="success">0.014s</td>
+<td class="success">0.025s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,8 +92,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-03-09T16:43:48.404-03:00  INFO 5652 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest]: ProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-03-09T16:43:48.425-03:00  INFO 5652 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest
+<pre>2023-03-13T10:33:19.751-03:00  INFO 41400 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest]: ProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-13T10:33:19.831-03:00  INFO 41400 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductGatewayImplTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -103,22 +103,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-09T16:43:48.455-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Starting ProductGatewayImplTest using Java 17.0.2 with PID 5652 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
-2023-03-09T16:43:48.455-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : The following 1 profile is active: &quot;test-integration&quot;
-2023-03-09T16:43:48.556-03:00  INFO 5652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-09T16:43:48.569-03:00  INFO 5652 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
-2023-03-09T16:43:48.592-03:00  INFO 5652 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2023-03-09T16:43:48.641-03:00  INFO 5652 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fc4dafdb-82f8-45a9-8e7b-e9c4c36a1314;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-03-09T16:43:48.654-03:00  INFO 5652 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:fc4dafdb-82f8-45a9-8e7b-e9c4c36a1314 (H2 2.1)
-2023-03-09T16:43:48.660-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
-2023-03-09T16:43:48.661-03:00  INFO 5652 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;PUBLIC&quot;.&quot;flyway_schema_history&quot; ...
-2023-03-09T16:43:48.669-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: &lt;&lt; Empty Schema &gt;&gt;
-2023-03-09T16:43:48.675-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;PUBLIC&quot; to version &quot;1 - Create Products Table&quot;
-2023-03-09T16:43:48.678-03:00  INFO 5652 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;PUBLIC&quot;, now at version v1 (execution time 00:00.010s)
-2023-03-09T16:43:48.701-03:00  INFO 5652 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-09T16:43:48.707-03:00  WARN 5652 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-09T16:43:48.712-03:00  INFO 5652 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-09T16:43:48.724-03:00  INFO 5652 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+2023-03-13T10:33:19.894-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Starting ProductGatewayImplTest using Java 17.0.2 with PID 41400 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
+2023-03-13T10:33:19.895-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : The following 1 profile is active: &quot;test-integration&quot;
+2023-03-13T10:33:20.085-03:00  INFO 41400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13T10:33:20.129-03:00  INFO 41400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-03-13T10:33:20.158-03:00  INFO 41400 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-03-13T10:33:20.221-03:00  INFO 41400 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:1ba3ba4f-a590-4f53-b33d-999e287b720c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-03-13T10:33:20.238-03:00  INFO 41400 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:1ba3ba4f-a590-4f53-b33d-999e287b720c (H2 2.1)
+2023-03-13T10:33:20.248-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.002s)
+2023-03-13T10:33:20.250-03:00  INFO 41400 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;PUBLIC&quot;.&quot;flyway_schema_history&quot; ...
+2023-03-13T10:33:20.260-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2023-03-13T10:33:20.264-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;PUBLIC&quot; to version &quot;1 - Create Products Table&quot;
+2023-03-13T10:33:20.270-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;PUBLIC&quot;, now at version v1 (execution time 00:00.011s)
+2023-03-13T10:33:20.308-03:00  INFO 41400 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13T10:33:20.315-03:00  WARN 41400 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-13T10:33:20.328-03:00  INFO 41400 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-13T10:33:20.346-03:00  INFO 41400 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 
 jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291) ~[jakarta.validation-api-3.0.2.jar:na]
@@ -249,10 +249,10 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2023-03-09T16:43:48.748-03:00  INFO 5652 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-09T16:43:48.749-03:00  INFO 5652 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-09T16:43:48.803-03:00  INFO 5652 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Started ProductGatewayImplTest in 0.373 seconds (process running for 7.489)
-2023-03-09T19:43:48.816116700Z
+2023-03-13T10:33:20.384-03:00  INFO 41400 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13T10:33:20.385-03:00  INFO 41400 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13T10:33:20.480-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.p.ProductGatewayImplTest       : Started ProductGatewayImplTest in 0.64 seconds (process running for 11.394)
+2023-03-13T13:33:20.502092600Z
 Hibernate: 
     select
         count(*) 
@@ -278,7 +278,7 @@ Hibernate:
         (created_at, description, name, purchase_price, stock, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?)
-2023-03-09T19:43:48.816116700Z
+2023-03-13T13:33:20.502092600Z
 Hibernate: 
     select
         count(*) 
@@ -320,7 +320,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 9 de mar. de 2023 16:43:49</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 13 de mar. de 2023 10:33:20</p>
 </div>
 </div>
 </body>

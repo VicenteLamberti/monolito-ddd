@@ -1,7 +1,7 @@
 package br.com.vicente.productadm.usecase.checkstock;
 
 public record CheckProductStockOutputDto(
-        String id,
+        String productId,
         Integer stock
 ) {
 }

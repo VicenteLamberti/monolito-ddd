@@ -1,9 +1,9 @@
 package br.com.vicente.infrastructure.configuration.facede;
 
-import br.com.vicente.infrastructure.productadm.facade.AddProductFacade;
-import br.com.vicente.infrastructure.productadm.facade.AddProductFacadeImpl;
-import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacade;
+import br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImpl;
 import br.com.vicente.productadm.usecase.addproduct.AddProductUseCase;
+import br.com.vicente.productadm.usecase.checkstock.CheckProductStockUseCase;
 import br.com.vicente.shared.usecase.UseCaseInteface;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,15 +14,17 @@ public class ProductFacadeConfiguration {
     private final UseCaseInteface addUseCase;
     private final UseCaseInteface checkStockUseCase;
 
-    public ProductFacadeConfiguration(UseCaseInteface addUseCase,UseCaseInteface checkStockUseCase) {
+    public ProductFacadeConfiguration(AddProductUseCase addUseCase, CheckProductStockUseCase checkStockUseCase) {
         this.addUseCase = addUseCase;
         this.checkStockUseCase = checkStockUseCase;
     }
 
     @Bean
-    public AddProductFacade addProductFacade(){
+    public ProductAdmFacade addProductFacade(){
 
-        return new AddProductFacadeImpl(addUseCase,checkStockUseCase);
+        return new ProductAdmFacadeImpl(addUseCase,checkStockUseCase);
     }
+
+
 
 }

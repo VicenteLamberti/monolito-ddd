@@ -59,7 +59,7 @@ public class CheckProductStockUseCaseTest {
         Mockito.verify(gateway,Mockito.times(1)).findById(Mockito.any());
         Assertions.assertNotNull(checkOutput);
         Assertions.assertEquals(expectedStock, checkOutput.stock());
-        Assertions.assertEquals(expectedId, checkOutput.id());
+        Assertions.assertEquals(expectedId, checkOutput.productId());
 
 
 
