@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-13T13:33:18" hostname="NLAMBERT" time="0.911">
+<testsuite name="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-14T12:09:27" hostname="NLAMBERT" time="0.567">
   <properties/>
-  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" time="0.871"/>
-  <testcase name="givenAValidAPersistedProduct_whenCallsCheckStock_shouldReturnData()" classname="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" time="0.038"/>
-  <system-out><![CDATA[10:33:10.311 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductAdmFacadeImplTest]: using SpringBootContextLoader
-10:33:10.319 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-10:33:10.321 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: ProductAdmFacadeImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-10:33:10.380 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [ProductAdmFacadeImplTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-10:33:10.515 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure\build\classes\java\main\br\com\vicente\infrastructure\Main.class]
-10:33:10.518 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest
-10:33:10.700 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [ProductAdmFacadeImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-10:33:10.701 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [ProductAdmFacadeImplTest], class annotated with @DirtiesContext [false] with mode [null]
+  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" time="0.528"/>
+  <testcase name="givenAValidAPersistedProduct_whenCallsCheckStock_shouldReturnData()" classname="br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest" time="0.037"/>
+  <system-out><![CDATA[09:09:22.374 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ProductAdmFacadeImplTest]: using SpringBootContextLoader
+09:09:22.379 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:09:22.379 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: ProductAdmFacadeImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:09:22.409 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [ProductAdmFacadeImplTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+09:09:22.466 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure\build\classes\java\main\br\com\vicente\infrastructure\Main.class]
+09:09:22.468 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest
+09:09:22.579 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [ProductAdmFacadeImplTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+09:09:22.581 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [ProductAdmFacadeImplTest], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -20,27 +20,27 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-13T10:33:11.152-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Starting ProductAdmFacadeImplTest using Java 17.0.2 with PID 41400 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
-2023-03-13T10:33:11.155-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : The following 1 profile is active: "test-integration"
-2023-03-13T10:33:12.467-03:00  INFO 41400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-13T10:33:12.557-03:00  INFO 41400 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
-2023-03-13T10:33:13.332-03:00  INFO 41400 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
-2023-03-13T10:33:13.333-03:00  INFO 41400 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
-2023-03-13T10:33:13.333-03:00  INFO 41400 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-03-13T10:33:13.350-03:00  INFO 41400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-13T10:33:13.643-03:00  INFO 41400 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
-2023-03-13T10:33:13.645-03:00  INFO 41400 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-13T10:33:13.659-03:00  INFO 41400 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:testdb (H2 2.1)
-2023-03-13T10:33:13.732-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.014s)
-2023-03-13T10:33:13.743-03:00  INFO 41400 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
-2023-03-13T10:33:13.777-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
-2023-03-13T10:33:13.786-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - Create Products Table"
-2023-03-13T10:33:13.797-03:00  INFO 41400 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.022s)
-2023-03-13T10:33:13.988-03:00  INFO 41400 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-13T10:33:14.099-03:00  INFO 41400 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-03-13T10:33:14.471-03:00  WARN 41400 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-13T10:33:14.837-03:00  INFO 41400 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-13T10:33:15.154-03:00  INFO 41400 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+2023-03-14T09:09:22.859-03:00  INFO 4792 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Starting ProductAdmFacadeImplTest using Java 17.0.2 with PID 4792 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
+2023-03-14T09:09:22.860-03:00  INFO 4792 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : The following 1 profile is active: "test-integration"
+2023-03-14T09:09:23.637-03:00  INFO 4792 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-14T09:09:23.708-03:00  INFO 4792 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2023-03-14T09:09:24.261-03:00  INFO 4792 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-03-14T09:09:24.261-03:00  INFO 4792 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-03-14T09:09:24.261-03:00  INFO 4792 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
+2023-03-14T09:09:24.271-03:00  INFO 4792 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-14T09:09:24.454-03:00  INFO 4792 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ROOT
+2023-03-14T09:09:24.455-03:00  INFO 4792 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-14T09:09:24.468-03:00  INFO 4792 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:testdb (H2 2.1)
+2023-03-14T09:09:24.522-03:00  INFO 4792 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.016s)
+2023-03-14T09:09:24.528-03:00  INFO 4792 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2023-03-14T09:09:24.551-03:00  INFO 4792 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2023-03-14T09:09:24.556-03:00  INFO 4792 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - Create Products Table"
+2023-03-14T09:09:24.562-03:00  INFO 4792 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.015s)
+2023-03-14T09:09:24.676-03:00  INFO 4792 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-14T09:09:24.740-03:00  INFO 4792 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-14T09:09:24.916-03:00  WARN 4792 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-14T09:09:25.070-03:00  INFO 4792 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-14T09:09:25.296-03:00  INFO 4792 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 
 jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291) ~[jakarta.validation-api-3.0.2.jar:na]
@@ -171,11 +171,11 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2023-03-13T10:33:15.758-03:00  INFO 41400 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-13T10:33:15.769-03:00  INFO 41400 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-13T10:33:16.475-03:00  WARN 41400 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-13T10:33:18.646-03:00  INFO 41400 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2023-03-13T10:33:18.787-03:00  INFO 41400 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Started ProductAdmFacadeImplTest in 8.008 seconds (process running for 9.701)
+2023-03-14T09:09:25.708-03:00  INFO 4792 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-14T09:09:25.716-03:00  INFO 4792 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-14T09:09:26.259-03:00  WARN 4792 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-14T09:09:27.493-03:00  INFO 4792 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-14T09:09:27.538-03:00  INFO 4792 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Started ProductAdmFacadeImplTest in 4.904 seconds (process running for 6.003)
 Hibernate: 
     select
         p1_0.id,
@@ -187,6 +187,14 @@ Hibernate:
         p1_0.updated_at 
     from
         products p1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.purchase_price 
+    from
+        products s1_0
 Hibernate: 
     select
         count(*) 
@@ -234,6 +242,14 @@ Hibernate:
         products 
     where
         id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.purchase_price 
+    from
+        products s1_0
 Hibernate: 
     select
         count(*) 

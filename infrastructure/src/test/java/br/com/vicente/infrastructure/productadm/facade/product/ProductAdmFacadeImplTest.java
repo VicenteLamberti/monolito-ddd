@@ -4,8 +4,8 @@ import br.com.vicente.infrastructure.CleanUpExtension;
 import br.com.vicente.infrastructure.productadm.facade.product.addproduct.AddProductFacadeInputDto;
 import br.com.vicente.infrastructure.productadm.facade.product.checkstock.CheckStockFacadeInputDto;
 import br.com.vicente.infrastructure.productadm.facade.product.checkstock.CheckStockFacadeOutputDto;
-import br.com.vicente.infrastructure.productadm.persistence.ProductJPAEntity;
-import br.com.vicente.infrastructure.productadm.persistence.ProductRepository;
+import br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductJPAEntity;
+import br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductRepository;
 import br.com.vicente.productadm.domain.ProductEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -31,7 +31,7 @@ public class ProductAdmFacadeImplTest {
     private ProductAdmFacadeImpl productAdmFacadeImpl;
 
     @Autowired
-    private ProductRepository productRepository;
+    private ProductAdmProductRepository productRepository;
 
 
     @Test
@@ -59,7 +59,7 @@ public class ProductAdmFacadeImplTest {
 
         Assertions.assertEquals(0,productRepository.count());
 
-        productRepository.saveAndFlush(ProductJPAEntity.from(product));
+        productRepository.saveAndFlush(ProductAdmProductJPAEntity.from(product));
         Assertions.assertEquals(1,productRepository.count());
         System.out.println(productRepository.count());
 

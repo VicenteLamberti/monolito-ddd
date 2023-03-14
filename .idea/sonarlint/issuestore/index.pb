@@ -29,12 +29,8 @@ Einfrastructure/src/test/java/br/com/vicente/infrastructure/Teste.java,e\9\e9f7
 Pinfrastructure/src/test/java/br/com/vicente/infrastructure/productadm/Teste.java,f\c\fc6e64141d76bb67beee28829c8a9dc4979b0e6a
 t
 Dinfrastructure/src/main/java/br/com/vicente/infrastructure/Main.java,e\3\e31a5b6909eefdb1b0be8afc4096ffeb7323b134
-ò
-hinfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/persistence/ProductRepository.java,3\f\3ffef9bfecc86f6d5d440a073a0b55bb45152ff1
 Ä
 Pinfrastructure/src/test/java/br/com/vicente/infrastructure/CleanUpExtension.java,0\8\0819a6047ade9548229dd1de2aebad5c27eb532a
-ô
-iinfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/persistence/ProductGatewayImpl.java,7\c\7c5c11823d37bc4ef0f2d5a9cd7815300c557729
 Ä
 Pshared/src/main/java/br/com/vicente/shared/domain/valueobject/IdValueObject.java,0\f\0f7bca3a58943ea7eeed3db796347ec69333f00e
 á
@@ -43,12 +39,6 @@ Winfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/facade/Te
 }infrastructure/src/main/java/br/com/vicente/infrastructure/productadm/facade/product/addproduct/AddProductFacadeInputDto.java,4\b\4b71986c7497c6417aa419a064af4944ec0ba535
 á
 Winfrastructure/src/test/java/br/com/vicente/infrastructure/productadm/facade/Teste.java,7\5\75be7b7975bb30abeef62cf9330f2e3affa39f53
-é
-^infrastructure/src/main/java/br/com/vicente/infrastructure/configuration/WebConfiguration.java,5\8\58757b700a29c9affcd773e696a5d20dd3788071
-ù
-minfrastructure/src/test/java/br/com/vicente/infrastructure/productadm/persistence/ProductGatewayImplTest.java,7\7\773939203692f20d9c00182a143f151181cc2822
-°
-qinfrastructure/src/main/java/br/com/vicente/infrastructure/configuration/usecase/ProductUseCaseConfiguration.java,e\0\e0b24fb8253c438b963c6be3ffcb96e524237149
 ö
 jinfrastructure/src/main/java/br/com/vicente/infrastructure/productadm/facade/product/ProductAdmFacade.java,b\d\bda062ccf3cc8781a8ee2766159c49e6e3ec9ac1
 |
@@ -81,5 +71,3 @@ x
 Hshared/src/main/java/br/com/vicente/shared/domain/entity/BaseEntity.java,f\4\f4dea5fe6d1a73ee88efb2991c721a9ec4f13849
 Ä
 Pstorecatalog/src/main/java/br/com/vicente/storecatalog/domain/ProductEntity.java,a\d\ad2bfd2391aad13ebd7a3df139897d5913376bf3
-|
-Lproductadm/src/main/java/br/com/vicente/productadm/domain/ProductEntity.java,d\3\d32132a413f5030165f07131e19f51ca4fcd911e
