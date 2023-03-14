@@ -1,22 +1,21 @@
 package br.com.vicente.infrastructure.productadm.facade.product;
 
-import br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacade;
 import br.com.vicente.infrastructure.productadm.facade.product.addproduct.AddProductFacadeInputDto;
 import br.com.vicente.infrastructure.productadm.facade.product.checkstock.CheckStockFacadeInputDto;
 import br.com.vicente.infrastructure.productadm.facade.product.checkstock.CheckStockFacadeOutputDto;
 import br.com.vicente.productadm.usecase.addproduct.AddProductInputDto;
 import br.com.vicente.productadm.usecase.checkstock.CheckProductStockInputDto;
 import br.com.vicente.productadm.usecase.checkstock.CheckProductStockOutputDto;
-import br.com.vicente.shared.usecase.UseCaseInteface;
+import br.com.vicente.shared.usecase.UseCaseInOutInteface;
 
 import java.util.Optional;
 
 public class ProductAdmFacadeImpl implements ProductAdmFacade {
 
-    private final UseCaseInteface addUseCase;
-    private final  UseCaseInteface checkStockUseCase;
+    private final UseCaseInOutInteface addUseCase;
+    private final UseCaseInOutInteface checkStockUseCase;
 
-    public ProductAdmFacadeImpl(UseCaseInteface addUseCase, UseCaseInteface checkStockUseCase) {
+    public ProductAdmFacadeImpl(UseCaseInOutInteface addUseCase, UseCaseInOutInteface checkStockUseCase) {
         this.addUseCase = addUseCase;
         this.checkStockUseCase = checkStockUseCase;
 

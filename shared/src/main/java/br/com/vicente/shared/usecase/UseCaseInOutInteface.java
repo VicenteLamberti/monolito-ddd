@@ -1,5 +1,5 @@
 package br.com.vicente.shared.usecase;
 
-public interface UseCaseInteface<INPUT,OUTPUT> {
+public interface UseCaseInOutInteface<INPUT,OUTPUT> {
     OUTPUT execute (INPUT input);
 }
