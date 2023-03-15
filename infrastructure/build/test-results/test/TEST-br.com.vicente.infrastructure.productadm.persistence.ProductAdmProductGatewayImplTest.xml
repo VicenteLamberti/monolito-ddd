@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-15T15:43:41" hostname="NLAMBERT" time="0.037">
+<testsuite name="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-15T15:48:18" hostname="NLAMBERT" time="0.039">
   <properties/>
-  <testcase name="givenAPersistedProducts_whenCallsFindById_shouldReturnProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" time="0.019"/>
-  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" time="0.017"/>
-  <system-out><![CDATA[2023-03-15T12:43:41.400-03:00  INFO 28904 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest]: ProductAdmProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-03-15T12:43:41.411-03:00  INFO 28904 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest
+  <testcase name="givenAPersistedProducts_whenCallsFindById_shouldReturnProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" time="0.021"/>
+  <testcase name="givenAValidEntity_whenCallAddProduct_shouldAddProduct()" classname="br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest" time="0.016"/>
+  <system-out><![CDATA[2023-03-15T12:48:18.483-03:00  INFO 29236 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest]: ProductAdmProductGatewayImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-15T12:48:18.497-03:00  INFO 29236 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.persistence.ProductAdmProductGatewayImplTest
 Hibernate: 
     select
         s1_0.id,
@@ -24,7 +24,7 @@ Hibernate:
         p1_0.updated_at 
     from
         products p1_0
-2023-03-15T15:43:41.420076300Z
+2023-03-15T15:48:18.508892100Z
 Hibernate: 
     select
         count(*) 
@@ -50,7 +50,7 @@ Hibernate:
         (created_at, description, name, purchase_price, stock, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?)
-2023-03-15T15:43:41.420076300Z
+2023-03-15T15:48:18.508892100Z
 Hibernate: 
     select
         s1_0.id,
