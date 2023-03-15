@@ -1,14 +1,14 @@
 package br.com.vicente.infrastructure.productadm.persistence;
 
 import br.com.vicente.productadm.domain.ProductEntity;
-import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.productadm.gateway.ProductAdmProductGateway;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class ProductAdmProductGatewayImpl implements ProductGateway {
+public class ProductAdmProductGatewayImpl implements ProductAdmProductGateway {
 
     private final ProductAdmProductRepository productRepository;
 

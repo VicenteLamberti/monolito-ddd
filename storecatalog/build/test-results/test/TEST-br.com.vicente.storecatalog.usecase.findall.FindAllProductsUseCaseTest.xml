@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.vicente.storecatalog.usecase.findall.FindAllProductsUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T12:09:30" hostname="NLAMBERT" time="0.465">
+<testsuite name="br.com.vicente.storecatalog.usecase.findall.FindAllProductsUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-15T15:43:43" hostname="NLAMBERT" time="0.399">
   <properties/>
-  <testcase name="givenAValidEntitiesPersisted_whenCallsFindAll_shouldReturnAllProducts()" classname="br.com.vicente.storecatalog.usecase.findall.FindAllProductsUseCaseTest" time="0.465"/>
+  <testcase name="givenAValidEntitiesPersisted_whenCallsFindAll_shouldReturnAllProducts()" classname="br.com.vicente.storecatalog.usecase.findall.FindAllProductsUseCaseTest" time="0.399"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

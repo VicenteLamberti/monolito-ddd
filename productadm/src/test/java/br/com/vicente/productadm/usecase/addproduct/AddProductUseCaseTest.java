@@ -1,6 +1,6 @@
 package br.com.vicente.productadm.usecase.addproduct;
 
-import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.productadm.gateway.ProductAdmProductGateway;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,7 +18,7 @@ public class AddProductUseCaseTest {
     private AddProductUseCase useCase;
 
     @Mock
-    private ProductGateway gateway;
+    private ProductAdmProductGateway gateway;
 
     @Test
     public void givenAValidEntity_whenCallAddProduct_shouldAddProduct(){

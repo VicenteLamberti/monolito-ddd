@@ -2,7 +2,7 @@ package br.com.vicente.storecatalog.usecase.findall;
 
 import br.com.vicente.shared.domain.valueobject.IdValueObject;
 import br.com.vicente.storecatalog.domain.ProductEntity;
-import br.com.vicente.storecatalog.gateway.ProductGateway;
+import br.com.vicente.storecatalog.gateway.StoreCatalogProductGateway;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,7 +21,7 @@ public class FindAllProductsUseCaseTest {
     private FindAllProductsUseCase useCase;
 
     @Mock
-    private ProductGateway gateway;
+    private StoreCatalogProductGateway gateway;
 
 
     @Test

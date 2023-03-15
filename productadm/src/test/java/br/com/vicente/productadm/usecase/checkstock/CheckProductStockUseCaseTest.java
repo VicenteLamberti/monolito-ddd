@@ -1,7 +1,7 @@
 package br.com.vicente.productadm.usecase.checkstock;
 
 import br.com.vicente.productadm.domain.ProductEntity;
-import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.productadm.gateway.ProductAdmProductGateway;
 import br.com.vicente.productadm.usecase.addproduct.AddProductInputDto;
 import br.com.vicente.productadm.usecase.addproduct.AddProductOutputDto;
 import br.com.vicente.productadm.usecase.addproduct.AddProductUseCase;
@@ -28,7 +28,7 @@ public class CheckProductStockUseCaseTest {
 
 
     @Mock
-    private ProductGateway gateway;
+    private ProductAdmProductGateway gateway;
 
     @Test
     public void givenAValidEntityPersisted_whenCallsCheckProductStock_shouldReturnOK(){

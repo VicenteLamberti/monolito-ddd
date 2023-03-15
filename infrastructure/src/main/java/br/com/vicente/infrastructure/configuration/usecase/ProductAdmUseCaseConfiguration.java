@@ -1,6 +1,6 @@
 package br.com.vicente.infrastructure.configuration.usecase;
 
-import br.com.vicente.productadm.gateway.ProductGateway;
+import br.com.vicente.productadm.gateway.ProductAdmProductGateway;
 import br.com.vicente.productadm.usecase.addproduct.AddProductUseCase;
 import br.com.vicente.productadm.usecase.checkstock.CheckProductStockUseCase;
 import org.springframework.context.annotation.Bean;
@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ProductAdmUseCaseConfiguration {
 
-    private final ProductGateway productGateway;
+    private final ProductAdmProductGateway productGateway;
 
-    public ProductAdmUseCaseConfiguration(ProductGateway productGateway) {
+    public ProductAdmUseCaseConfiguration(ProductAdmProductGateway productGateway) {
         this.productGateway = productGateway;
     }
 
