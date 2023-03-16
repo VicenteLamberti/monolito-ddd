@@ -2,9 +2,9 @@ package br.com.vicente.storecatalog.usecase.find;
 
 import br.com.vicente.shared.usecase.UseCaseInOutInteface;
 import br.com.vicente.storecatalog.gateway.StoreCatalogProductGateway;
-import br.com.vicente.storecatalog.usecase.ProductDto;
+import br.com.vicente.storecatalog.usecase.ProductOutputDto;
 
-public class FindProductUseCase implements UseCaseInOutInteface<String, ProductDto> {
+public class FindProductUseCase implements UseCaseInOutInteface<String, ProductOutputDto> {
 
     private final StoreCatalogProductGateway gateway;
 
@@ -13,8 +13,8 @@ public class FindProductUseCase implements UseCaseInOutInteface<String, ProductD
     }
 
     @Override
-    public ProductDto execute(String id) {
-        return gateway.find(id).map(ProductDto::from).orElseThrow(
+    public ProductOutputDto execute(String id) {
+        return gateway.find(id).map(ProductOutputDto::from).orElseThrow(
                 ()->new RuntimeException("Não encontrado"));
 
     }

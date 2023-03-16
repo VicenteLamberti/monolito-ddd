@@ -6,7 +6,7 @@ import br.com.vicente.storecatalog.gateway.StoreCatalogProductGateway;
 
 import java.util.List;
 
-public class FindAllProductsUseCase implements UseCaseOutInteface<FindAllProductsDto> {
+public class FindAllProductsUseCase implements UseCaseOutInteface<FindAllProductsOutpurDto> {
 
     private final StoreCatalogProductGateway gateway;
 
@@ -15,9 +15,9 @@ public class FindAllProductsUseCase implements UseCaseOutInteface<FindAllProduct
     }
 
     @Override
-    public FindAllProductsDto execute() {
+    public FindAllProductsOutpurDto execute() {
         List<ProductEntity> products = gateway.findAll();
-        return FindAllProductsDto.from(products);
+        return FindAllProductsOutpurDto.from(products);
 
 
     }

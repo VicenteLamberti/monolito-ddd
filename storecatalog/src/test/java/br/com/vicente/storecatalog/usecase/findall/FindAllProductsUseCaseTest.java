@@ -32,7 +32,7 @@ public class FindAllProductsUseCaseTest {
 
         Mockito.when(gateway.findAll()).thenReturn(List.of(product1,product2));
 
-        FindAllProductsDto products = useCase.execute();
+        FindAllProductsOutpurDto products = useCase.execute();
         Assertions.assertEquals(2, products.products().size());
 
 

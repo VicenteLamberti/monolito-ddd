@@ -3,9 +3,7 @@ package br.com.vicente.storecatalog.usecase.find;
 import br.com.vicente.shared.domain.valueobject.IdValueObject;
 import br.com.vicente.storecatalog.domain.ProductEntity;
 import br.com.vicente.storecatalog.gateway.StoreCatalogProductGateway;
-import br.com.vicente.storecatalog.usecase.ProductDto;
-import br.com.vicente.storecatalog.usecase.findall.FindAllProductsDto;
-import br.com.vicente.storecatalog.usecase.findall.FindAllProductsUseCase;
+import br.com.vicente.storecatalog.usecase.ProductOutputDto;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,7 +13,6 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Optional;
 
 @ExtendWith(MockitoExtension.class)
@@ -35,7 +32,7 @@ public class FindProductUseCaseTest {
 
         Mockito.when(gateway.find(expectedId)).thenReturn(Optional.of(product1));
 
-        ProductDto product = useCase.execute(expectedId);
+        ProductOutputDto product = useCase.execute(expectedId);
         Assertions.assertEquals(expectedId, product.id());
 
 
