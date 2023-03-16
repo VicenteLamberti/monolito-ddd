@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.vicente.storecatalog.usecase.find.FindProductUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-15T16:13:58" hostname="NLAMBERT" time="0.467">
+<testsuite name="br.com.vicente.storecatalog.usecase.find.FindProductUseCaseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-16T11:39:09" hostname="NLAMBERT" time="0.505">
   <properties/>
-  <testcase name="givenAValidEntitiyPersisted_whenCallsFind_shouldReturnAProducts()" classname="br.com.vicente.storecatalog.usecase.find.FindProductUseCaseTest" time="0.467"/>
+  <testcase name="givenAValidEntitiyPersisted_whenCallsFind_shouldReturnAProducts()" classname="br.com.vicente.storecatalog.usecase.find.FindProductUseCaseTest" time="0.505"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

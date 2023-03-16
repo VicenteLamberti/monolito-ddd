@@ -61,9 +61,35 @@ public class StoreCatalogProductGatewayImplTest {
         List<ProductEntity> listResult = storeCatalogProductGateway.findAll();
 
         Assertions.assertEquals(2,listResult.size());
+    }
+
+    @Test
+    public void givenAValidEntity_whenCallFind_shouldReturnProduct(){
+        String expectedName = "Produto 1";
+        String expectedDescription = "Descrição";
+        BigDecimal expectedPrice = BigDecimal.TEN;
+        Integer expectedStock  = 5;
+        br.com.vicente.productadm.domain.ProductEntity product = br.com.vicente.productadm.domain.ProductEntity.newProductEntity(expectedName,expectedDescription,expectedPrice,expectedStock);
+
+        String expectedId = product.getId().getId();
+
+        String expectedName2 = "Produto 2";
+        String expectedDescription2 = "Descrição2";
+        BigDecimal expectedPrice2 = BigDecimal.valueOf(5);
+        Integer expectedStock2  = 6;
+        br.com.vicente.productadm.domain.ProductEntity product2 = br.com.vicente.productadm.domain.ProductEntity.newProductEntity(expectedName2,expectedDescription2,expectedPrice2,expectedStock2);
 
 
 
+        Assertions.assertEquals(0, storeCatalogProductRepository.count());
+        ProductAdmProductJPAEntity entity1 = ProductAdmProductJPAEntity.from(product);
+        ProductAdmProductJPAEntity entity2 = ProductAdmProductJPAEntity.from(product2);
+        productAdmProductRepository.saveAllAndFlush(List.of(entity1,entity2));
 
+
+
+        ProductEntity result = storeCatalogProductGateway.find(expectedId).get();
+
+        Assertions.assertEquals(expectedId,result.getId().getId());
     }
 }

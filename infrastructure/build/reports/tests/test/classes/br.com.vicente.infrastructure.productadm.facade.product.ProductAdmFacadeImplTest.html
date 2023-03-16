@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.049s</div>
+<div class="counter">0.059s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">givenAValidAPersistedProduct_whenCallsCheckStock_shouldReturnData()</td>
-<td class="success">0.028s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenAValidEntity_whenCallAddProduct_shouldAddProduct()</td>
-<td class="success">0.021s</td>
+<td class="success">0.025s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,8 +92,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-03-15T12:48:16.014-03:00  INFO 29236 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: ProductAdmFacadeImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-03-15T12:48:16.028-03:00  INFO 29236 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest
+<pre>2023-03-16T08:39:03.290-03:00  INFO 14772 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest]: ProductAdmFacadeImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-16T08:39:03.308-03:00  INFO 14772 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.vicente.infrastructure.Main for test class br.com.vicente.infrastructure.productadm.facade.product.ProductAdmFacadeImplTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -103,23 +103,23 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2023-03-15T12:48:16.067-03:00  INFO 29236 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Starting ProductAdmFacadeImplTest using Java 17.0.2 with PID 29236 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
-2023-03-15T12:48:16.067-03:00  INFO 29236 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : The following 1 profile is active: &quot;test-integration&quot;
-2023-03-15T12:48:16.548-03:00  INFO 29236 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-15T12:48:16.565-03:00  INFO 29236 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
-2023-03-15T12:48:16.746-03:00  INFO 29236 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-15T12:48:16.783-03:00  INFO 29236 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn8: url=jdbc:h2:mem:testdb user=ROOT
-2023-03-15T12:48:16.785-03:00  INFO 29236 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-15T12:48:16.789-03:00  INFO 29236 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:testdb (H2 2.1)
-2023-03-15T12:48:16.799-03:00  INFO 29236 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.001s)
-2023-03-15T12:48:16.801-03:00  INFO 29236 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
-2023-03-15T12:48:16.809-03:00  INFO 29236 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
-2023-03-15T12:48:16.812-03:00  INFO 29236 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - Create Products Table&quot;
-2023-03-15T12:48:16.816-03:00  INFO 29236 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.008s)
-2023-03-15T12:48:16.842-03:00  INFO 29236 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-15T12:48:16.846-03:00  WARN 29236 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-15T12:48:16.851-03:00  INFO 29236 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-15T12:48:16.864-03:00  INFO 29236 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
+2023-03-16T08:39:03.370-03:00  INFO 14772 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Starting ProductAdmFacadeImplTest using Java 17.0.2 with PID 14772 (started by vicente.lamberti in C:\Users\vicente.lambert\Desktop\Estudos\workspace-java-pessoal-estudos\monolito-ddd\infrastructure)
+2023-03-16T08:39:03.370-03:00  INFO 14772 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : The following 1 profile is active: &quot;test-integration&quot;
+2023-03-16T08:39:04.026-03:00  INFO 14772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T08:39:04.048-03:00  INFO 14772 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-03-16T08:39:04.275-03:00  INFO 14772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-16T08:39:04.305-03:00  INFO 14772 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn11: url=jdbc:h2:mem:testdb user=ROOT
+2023-03-16T08:39:04.308-03:00  INFO 14772 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-16T08:39:04.315-03:00  INFO 14772 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:testdb (H2 2.1)
+2023-03-16T08:39:04.333-03:00  INFO 14772 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.001s)
+2023-03-16T08:39:04.335-03:00  INFO 14772 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2023-03-16T08:39:04.344-03:00  INFO 14772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2023-03-16T08:39:04.348-03:00  INFO 14772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;public&quot; to version &quot;1 - Create Products Table&quot;
+2023-03-16T08:39:04.353-03:00  INFO 14772 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.008s)
+2023-03-16T08:39:04.393-03:00  INFO 14772 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T08:39:04.399-03:00  WARN 14772 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-16T08:39:04.408-03:00  INFO 14772 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T08:39:04.430-03:00  INFO 14772 --- [    Test worker] o.h.c.beanvalidation.TypeSafeActivator   : Error calling `jakarta.validation.Validation#buildDefaultValidatorFactory`
 
 jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
 	at jakarta.validation.Validation$GenericBootstrapImpl.configure(Validation.java:291) ~[jakarta.validation-api-3.0.2.jar:na]
@@ -250,19 +250,11 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
 
-2023-03-15T12:48:16.902-03:00  INFO 29236 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-15T12:48:16.903-03:00  INFO 29236 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-15T12:48:17.179-03:00  WARN 29236 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-15T12:48:18.389-03:00  INFO 29236 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2023-03-15T12:48:18.413-03:00  INFO 29236 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Started ProductAdmFacadeImplTest in 2.374 seconds (process running for 6.652)
-Hibernate: 
-    select
-        s1_0.id,
-        s1_0.description,
-        s1_0.name,
-        s1_0.purchase_price 
-    from
-        products s1_0
+2023-03-16T08:39:04.470-03:00  INFO 14772 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T08:39:04.471-03:00  INFO 14772 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T08:39:04.834-03:00  WARN 14772 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T08:39:06.389-03:00  INFO 14772 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2023-03-16T08:39:06.422-03:00  INFO 14772 --- [    Test worker] b.c.v.i.p.f.p.ProductAdmFacadeImplTest   : Started ProductAdmFacadeImplTest in 3.099 seconds (process running for 9.564)
 Hibernate: 
     select
         p1_0.id,
@@ -274,6 +266,14 @@ Hibernate:
         p1_0.updated_at 
     from
         products p1_0
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.purchase_price 
+    from
+        products s1_0
 Hibernate: 
     select
         count(*) 
@@ -306,20 +306,6 @@ Hibernate:
         products p1_0
 Hibernate: 
     select
-        s1_0.id,
-        s1_0.description,
-        s1_0.name,
-        s1_0.purchase_price 
-    from
-        products s1_0
-Hibernate: 
-    delete 
-    from
-        products 
-    where
-        id=?
-Hibernate: 
-    select
         p1_0.id,
         p1_0.created_at,
         p1_0.description,
@@ -329,6 +315,20 @@ Hibernate:
         p1_0.updated_at 
     from
         products p1_0
+Hibernate: 
+    delete 
+    from
+        products 
+    where
+        id=?
+Hibernate: 
+    select
+        s1_0.id,
+        s1_0.description,
+        s1_0.name,
+        s1_0.purchase_price 
+    from
+        products s1_0
 Hibernate: 
     select
         count(*) 
@@ -389,7 +389,7 @@ Hibernate:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 15 de mar. de 2023 12:48:18</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 16 de mar. de 2023 08:39:06</p>
 </div>
 </div>
 </body>

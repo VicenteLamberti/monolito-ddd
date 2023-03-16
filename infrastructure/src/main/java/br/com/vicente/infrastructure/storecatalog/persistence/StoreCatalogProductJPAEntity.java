@@ -49,15 +49,13 @@ public class StoreCatalogProductJPAEntity {
         );
     }
 
-    public ProductEntity toAggregate() {
-        ProductEntity e = ProductEntity.with(
+    public br.com.vicente.storecatalog.domain.ProductEntity toAggregate() {
+        br.com.vicente.storecatalog.domain.ProductEntity e = br.com.vicente.storecatalog.domain.ProductEntity.with(
                 IdValueObject.from(getId()),
                 getName(),
                 getDescription(),
-                getSalesPrice(),
-                null,
-                null,
-                null
+                getSalesPrice()
+
 
 
         );

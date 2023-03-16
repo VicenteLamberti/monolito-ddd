@@ -34,6 +34,12 @@ public class StoreCatalogProductGatewayImpl implements StoreCatalogProductGatewa
 
     @Override
     public Optional<ProductEntity> find(String id) {
-        return Optional.empty();
+
+        StoreCatalogProductJPAEntity entity = productRepository.findById(id).orElseThrow(
+                ()->new RuntimeException("Não encontrado"));
+
+
+        return Optional.of(entity.toAggregate());
+
     }
 }
